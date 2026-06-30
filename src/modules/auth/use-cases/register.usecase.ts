@@ -4,7 +4,7 @@ import { RegisterDto } from "../dto/register.dto";
 import { UserMapper } from "src/modules/users/mappers/user.mapper";
 import { AuthError } from "../constants/auth.errors";
 import { AppException } from "src/common/exceptions/app.exception";
-import { PasswordHasherStrategy } from "../strategies/password.hasher.strategy";
+import { PasswordHasherStrategy } from "../strategies/hashing/password.hasher.strategy";
 
 @Injectable()
 export class RegisterUseCase {

@@ -42,6 +42,13 @@ export const AuthError = {
         statusCode: HttpStatus.UNAUTHORIZED,
     },
 
+    FORBIDDEN: {
+        code: 'AUTH.FORBIDDEN',
+        message: 'Không có quyền truy cập',
+        statusCode: HttpStatus.FORBIDDEN,
+    }
+    ,
+
     ACTIVE_SESSION_NOT_FOUND: {
         code: 'AUTH.ACTIVE_SESSION_NOT_FOUND',
         message: 'Không tìm thấy phiên đăng nhập đang hoạt động',
